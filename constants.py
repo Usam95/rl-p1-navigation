@@ -1,5 +1,5 @@
 
-
+import torch
 
 BUFFER_SIZE = int(1e5)  # replay buffer size
 BATCH_SIZE = 64         # minibatch size
