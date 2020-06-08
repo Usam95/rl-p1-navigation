@@ -15,29 +15,30 @@ This algorithm screenshot is taken from the [Deep Reinforcement Learning Nanodeg
 Please read also the original paper to [DQN](https://storage.googleapis.com/deepmind-media/dqn/DQNNaturePaper.pdf) for more information. 
 
 ## Q-network architecture
- Current implementation of Q-network uses a dense neural network with two hidden layers where each layer has 64 nodes with rectified linear unit activation function. The complete architecture is as follows:
+Current implementation of Q-network uses a dense neural network with two hidden layers where each layer has 64 nodes with rectified linear unit activation function.<br/> 
 
-Input: 37 nodes (state size)
-Hidden layer 1: 64 nodes
-Batch normalization
-Rectified linear unit activation
-Hidden layer 2: 64 nodes
-Rectified linear unit activation
-Output layer: 4 nodes (number of actions)
+**The complete architecture:**<br/>
 
-Parameters used in DQN algorithm:
+Input: 37 nodes (state size)<br/>
+Hidden layer 1: 64 nodes<br/>
+Rectified linear unit activation<br/>
+Hidden layer 2: 64 nodes<br/>
+Rectified linear unit activation<br/>
+Output layer: 4 nodes (number of actions)<br/>
 
-Maximum steps per episode: 1000
-Starting epsilion: 0.5
-Ending epsilion: 0.01
-Epsilion decay rate: 0.98
+**Parameters used in DQN algorithm:**<br/>
 
-BUFFER_SIZE = 100000    # replay buffer size
-BATCH_SIZE = 64         # minibatch size
-GAMMA = 0.99            # d iscount factor
-TAU = 0.001             # for soft update of target parameters
-LR = 0.0001             # learning rate 
-UPDATE_EVERY = 4 
+Maximum steps per episode: 1000<br/>
+Starting epsilion: 0.5<br/>
+Ending epsilion: 0.01<br/>
+Epsilion decay rate: 0.98<br/>
+
+BUFFER_SIZE = 100000    # replay buffer size<br/>
+BATCH_SIZE = 64         # minibatch size<br/>
+GAMMA = 0.99            # d iscount factor<br/>
+TAU = 0.001             # for soft update of target parameters<br/>
+LR = 0.0001             # learning rate <br/>
+UPDATE_EVERY = 4 <br/>
 
 ## Results
 
