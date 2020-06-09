@@ -37,4 +37,4 @@ Download the environment from one of the links below.  You need only select the 
 
 ### Instructions
 
-Follow the instructions in `Navigation.ipynb` to get started with training your own agent!  
+Follow the instructions in `Solution.ipynb` to get started with training your own agent!  
